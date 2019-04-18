@@ -1,0 +1,145 @@
+.footer {
+  background: #373a3d;
+}
+
+.footer-inner {
+  position: relative;
+}
+
+.scroller {
+  position: absolute;
+  right: 0;
+  top: -35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fa873b;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+  border-bottom: 1px solid rgba(255,255,255,.25);
+}
+
+.socials ul {
+  padding-top: 35px;
+  list-style: none;
+  padding-bottom: 15px;
+}
+
+.socials li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.socials li:first-child {
+  margin-left: 0;
+}
+
+.socials a {
+  display: block;
+  padding: 11px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  transition: all .3s ease;
+}
+
+.socials a:hover {
+  border-color: #66bb6a;
+}
+
+.whitelogo {
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.whitelogo a {
+  text-align: center;
+}
+
+.whitelogo img {
+  width: 220px;
+  filter: brightness(0) invert(1);
+}
+
+.copyright {
+  line-height: 29px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright span {
+  color: #66bb6a;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #fff;
+  transition: all .3s ease;
+}
+
+.copyright a:hover {
+  color: #66bb6a;
+}
+
+.footer_intro {
+  padding-bottom: 70px;
+}
+
+.footer_intro p {
+  line-height: 29px;
+  font-size: 14px;
+  text-align: center;
+  color: #eee;
+}
+
+.secondary-menu {
+  padding: 27px 0;
+  background: #2c2c2c;
+  display: flex;
+  justify-content: center;
+}
+
+.secondary-menu a {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 15px;
+  transition: all .3s ease;
+}
+
+.secondary-menu a:last-child {
+  margin-right: 0;
+}
+
+.secondary-menu a:hover {
+  color: #66bb6a;
+}
+
+@media (min-width: 1023px) {
+  .whitelogo img {
+    width: 220px;
+  }
+
+  .footer_intro p {
+    max-width: 60%;
+    margin-left: 20%;
+  }
+
+  .secondary-menu a {
+    font-size: 14px;
+    margin-right: 30px;
+  }
+
+}

@@ -1,0 +1,90 @@
+header {
+  height: 47px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0,0,0,.35);
+}
+
+.header-inner {
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+  display: block;
+  width: 90px;
+  height: 35px;
+  background: url('../assets/strawberry-seo.svg');
+  background-size: 100% 100%;
+}
+
+.nav {
+  display: none;
+}
+
+.nav a {
+  display: block;
+  padding: 12px 20px;
+  color: #202020;
+  text-decoration: none;
+  transition: .3s ease-in;
+}
+
+.nav a:hover {
+  color: #66bb6a;
+}
+
+.nav .active {
+  color: #66bb6a;
+}
+
+.mob-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15%;
+  background: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s linear;
+}
+
+.mob-nav a {
+  display: block;
+  padding: 12px 20px;
+  color: #202020;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0,0,0,.03);
+}
+
+.mob-nav a:first-child {
+  border-top: 1px solid rgba(0,0,0,.03);
+}
+
+.mob-nav .active {
+  color: #66bb6a;
+}
+
+@media (min-width:1023px) {
+  header {
+    height: 77px;
+  }
+
+  .header-inner {
+    height: 77px;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+  }
+}

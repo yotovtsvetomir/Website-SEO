@@ -1,0 +1,42 @@
+.bg-green {
+  background: #66bb6a;
+}
+
+.testimonial h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.testimonial h4 {
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.testimonials-inner .mydot {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #dadada;
+  transition: .2s;
+}
+
+.testimonials-inner .slick-active .mydot {
+  background: #fff;
+  border-radius: 30px;
+  width: 23px;
+}
+
+@media (min-width:1023px) {
+  .testimonial {
+    max-width: 70%;
+    margin-left: 15%;
+  }
+}

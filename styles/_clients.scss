@@ -1,0 +1,29 @@
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  padding: 13% 0;
+  margin-bottom: 30px;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.client:hover {
+  filter: none;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+@media (min-width:1023px) {
+  .clients {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .client {
+    width: 24%;
+    padding: 2% 0;
+  }
+}
